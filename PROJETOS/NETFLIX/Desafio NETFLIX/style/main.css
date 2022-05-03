@@ -47,5 +47,7 @@ header nav a:hover {
 
 .filme-principal {
     font-size: 16px;
-    background: url();
+    background: url("C:\PROGRAMACAO\WEB_DEVELOPER-1\PROJETOS\NETFLIX\Desafio NETFLIX\img\gone60.jpg");
+    height: 400px;
+    background-size: cover;
 }
