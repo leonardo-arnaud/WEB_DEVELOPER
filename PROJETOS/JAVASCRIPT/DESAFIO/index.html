@@ -1,8 +1,32 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
 	<head>
-		Teste Conta Banc·ria
+		1o Desafio
 	</head>
 	<body>
-		<script src="ContaBancaria.js"></script>
+
+		<p>Entre dois numeros inteiros entre -1000 e +1000 para encontrar o resultado e o resto da divis√£o entre eles:</p>
+
+		<form id="frm1" action="/action_page.php">
+			Primeiro numero: <input type="number" name="frstnbr"><br>
+			Segundo numero: <input type="number" name="scndnbr"><br><br>
+			<input type="button" onclick="myFunction()" value="Enviar">
+		</form>
+
+		<script>
+			function myFunction() {
+			let a = document.getElementByName("frstnbr").value;
+			let b = document.getElementByName("scndnbr").value;
+			let text;
+			if (isNaN(a) || a < -1000 || a > 1000 || isNaN(b) || b < -1000 || b > 1000) {
+				text = "Input not valid";
+			} else {
+				text = "Input OK";
+			}
+		}
+		</script>
+		
+
+		<script src="desafio.js"></script>
 	</body>
 </html>
