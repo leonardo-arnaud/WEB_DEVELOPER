@@ -1,14 +1,18 @@
 class ContaBancaria {
-	constructor(agencia, numero, tipo) {
+	// constructor(agencia, numero, tipo) {
+	constructor(agencia, numero, tipo, saldo) {
 		this.agencia = agencia;
 		this.numero = numero;
 		this.tipo = tipo;
-		this._saldo = 0;
+		// this._saldo = 0;
+		this._saldo = saldo;
 	}
 
 	sacar(valor) {
 		if (valor > this._saldo) {
 			return console.log('Saque negado; saldo insuficiente!');
+			// return 'OperaÃ§Ã£o negada!';
+
 		}
 
 		this._saldo = this._saldo - valor;
@@ -48,19 +52,19 @@ class ContaCorrente extends ContaBancaria {
 class ContaPoupanca extends ContaBancaria {
 	constructor(agencia, numero) {
 		super(agencia, numero);
-		this.tipo = 'poupança';
+		this.tipo = 'poupanï¿½a';
 	}
 }
 
 class ContaUniversitaria extends ContaBancaria {
 	constructor(agencia, numero) {
 		super(agencia, numero);
-		this.tipo = 'universitária';
+		this.tipo = 'universitï¿½ria';
 	}
 
 	sacar(valor) {
 		if (valor > 500) {
-			return 'Operação negada.';
+			return 'Operaï¿½ï¿½o negada.';
 		}
 
 		this._saldo = this._saldo - valor;
@@ -68,5 +72,5 @@ class ContaUniversitaria extends ContaBancaria {
 	}
 }
 
-const minhaConta = new ContaCorrente(1, 211, true);
-const contaUni = new ContaUniversitaria(2, 333);
+// const minhaConta = new ContaCorrente(1, 211, true);
+// const contaUni = new ContaUniversitaria(2, 333);
