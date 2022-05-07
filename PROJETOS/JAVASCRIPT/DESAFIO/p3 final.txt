@@ -1,0 +1,123 @@
+Exemplos				 a = b*q + r	
+Se a=+7 e b=+3, então q=2  e r=1, já que 7 = 3*2 + 1         UM
+Se a=+7 e b=-3, então q=-2 e r=1, já que 7 = -3*(-2) + 1     UM
+Se a=-7 e b=+3, então q=-3 e r=2, já que -7 = 3*(-3) + 2     DOIS
+Se a=-7 e b=-3, então q=3  e r=2, já que -7 = -3*3 + 2	     DOIS
+
+
+------------------------------------------
+
+html:
+
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		1o Desafio
+	</head>
+	<body>
+
+		<p>Entre dois numeros inteiros entre -1000 e +1000 para encontrar o resultado e o resto da divisão entre eles:</p>
+
+        <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+            Primeiro numero: <input type="number" name="primeiro"><br>
+            Segundo numero: <input type="number" name="segundo"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <script src="desafio2.js"></script>
+    </body>
+</html>
+
+-------------------------------------
+
+desafio2.js:
+
+function validateForm() {
+  let a = document.forms["myForm"]["primeiro"].value;
+  let b = document.forms["myForm"]["segundo"].value;
+  
+
+  //testando b e limites:
+  if ((b == 0) || (a < -1000) || (a > 1000) || (b < -1000) || (b > 1000)) {
+    alert("Valor digitado invalido");
+    return false;
+  }
+
+
+  //checando se + ou -
+  teste = a/b;
+
+  // if (Math.sign(teste) == 1) {
+  //    q = Math.floor(a / b);
+  //    r = a - (b * q);
+  // } else {
+  //    q = Math.ceil(a / b);
+  //    r = a - (b * q);
+  // }
+
+
+   //checando se + ou -
+   if (((Math.sign(a) == 1) && (Math.sign(b) == 1)) || ((Math.sign(a) == -1) && (Math.sign(b) == 1))) {
+    	q = Math.floor(a / b);
+    	r = a - (b * q);
+ 	  } 
+   if (((Math.sign(a) == 1) && (Math.sign(b) == -1)) || ((Math.sign(a) == -1) && (Math.sign(b) == -1))) 		 {
+    	q = Math.ceil(a / b);
+    	r = a - (b * q);
+  	}
+   
+
+
+  // if (Math.sign(a) == 1) {
+  //   q = Math.floor(a / b);
+  //   r = a - (b * q);
+  // } else {
+  //   q = Math.ceil(a / b);
+  //   r = a - (b * q);
+  // }
+
+
+//    teste = a/b;
+//
+//    if (Math.sign(teste) == 1) {
+//    	q = Math.floor(a / b);
+//    	r = a - (b * q);
+//  	} else {
+//    	q = Math.ceil(a / b);
+//    	r = a - (b * q);
+//  	}
+
+
+
+
+   
+  //resultados
+  console.log(q);
+  alert("Quociente: " + q + "  _  Resto: " + r);
+  return false;
+}
+
+
+-------------------------------------------------------------
+-----------------------------------------------------------
+
+	original:
+
+// a função gets é implementada dentro do sistema para ler as entradas(inputs) dos dados e a função print para imprimir a saída (output) de dados.
+// Abaixo segue um exemplo de código que você pode ou não utilizar
+
+let line = gets().split(" ");
+const a = parseInt(line[0]);
+const b = parseInt(line[1]);
+
+q = parseInt(a / b);
+
+r = a - b * q;
+
+if (r < 0) {
+  r += Math.abs(b);
+  
+  q =         ;    //escreva sua lógica aqui
+}
+
+print(q + " " + r);
