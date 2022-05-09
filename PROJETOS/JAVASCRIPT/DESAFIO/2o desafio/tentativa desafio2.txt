@@ -1,0 +1,28 @@
+
+
+const mA = [5][3];
+
+for (let i = 1; i == limit; i++) {
+  let X = i**2;
+  let Y = i**3;
+	
+  //alert(i);
+  //alert(X);
+  //alert(Y);
+  //print(i, X, Y);
+  //console.log(i X Y);
+
+  //const mA = math.matrix([[i-1, i], [i-1, X], [i-1, Y]]);
+
+  mA[i-1][0] = i;
+  mA[i-1][1] = X;
+  mA[i-1][2] = Y;
+
+}
+
+//const view = mA[0][0];
+alert(mA[1]);
+//console.log(mA);
+//document.getElementById("demo").innerHTML = mA;
+
+//<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.3.2/math.js"></script>
