@@ -4,6 +4,8 @@
 let line = gets().split(" ");
 const a = parseInt(line[0]);
 const b = parseInt(line[1]);
+//const a = 7;
+//const b = 3;
 
   //testando b e limites:
   if ((b == 0) || (a < -1000) || (a > 1000) || (b < -1000) || (b > 1000)) {
@@ -22,4 +24,6 @@ const b = parseInt(line[1]);
     	r = a - (b * q);
   }
 
-print(q + " " + r);
+//print(q + " " + r);
+console.log(q);
+console.log(r);
