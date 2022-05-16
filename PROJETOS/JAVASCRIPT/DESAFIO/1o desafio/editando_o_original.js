@@ -1,11 +1,11 @@
 // a função gets é implementada dentro do sistema para ler as entradas(inputs) dos dados e a função print para imprimir a saída (output) de dados.
 // Abaixo segue um exemplo de código que você pode ou não utilizar
 
-let line = gets().split(" ");
-const a = parseInt(line[0]);
-const b = parseInt(line[1]);
-//const a = 7;
-//const b = 3;
+//let line = gets().split(" ");
+//const a = parseInt(line[0]);
+//const b = parseInt(line[1]);
+const a = 7;
+const b = 3;
 
   //testando b e limites:
   if ((b == 0) || (a < -1000) || (a > 1000) || (b < -1000) || (b > 1000)) {
