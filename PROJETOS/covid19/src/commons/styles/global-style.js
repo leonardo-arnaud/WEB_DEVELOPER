@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
-import CovidImg from '../../assets/images/covid.jpg'
+import CovidImg from 'assets/images/covid.jpg'
 
 const globalStyle = createGlobalStyle`
   * {
@@ -10,7 +10,6 @@ const globalStyle = createGlobalStyle`
   body {
     line-height: normal;
   }
-
   html, body {
     width: 100%;
     min-height: 100%;
@@ -38,7 +37,6 @@ const globalStyle = createGlobalStyle`
   .cursor {
     cursor: pointer;
   }
-
 `
 
 export default globalStyle
