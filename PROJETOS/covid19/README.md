@@ -1,3 +1,3 @@
-## PWA do Showing COVID19 Cases
+COVID19 Cases site
 
-Host: https://covid19pwa.netlify.app/
+Host: https://XXX.netlify.app/
