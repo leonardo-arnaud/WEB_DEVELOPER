@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ArrayMultidimensional",
+            "request": "launch",
+            "mainClass": "br.com.dio.exercicios.arrays.comentado.ArrayMultidimensional",
+            "projectName": "WEB_DEVELOPER-1_b6af80b0"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex1_OrdemInversa",
+            "request": "launch",
+            "mainClass": "br.com.dio.exercicios.arrays.Ex1_OrdemInversa",
+            "projectName": "WEB_DEVELOPER-1_b6af80b0"
+        },
+        {
+            "type": "java",
+            "name": "Launch Consoantes",
+            "request": "launch",
+            "mainClass": "br.com.dio.exercicios.arrays.comentado.Consoantes",
+            "projectName": "WEB_DEVELOPER-1_b6af80b0"
+        },
+        {
+            "type": "java",
             "name": "Launch Main2",
             "request": "launch",
             "mainClass": "one.digitalinnovation.basecamp.Main2",
