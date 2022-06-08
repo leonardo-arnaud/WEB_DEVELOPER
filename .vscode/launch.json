@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Launch Main",
             "request": "launch",
+            "mainClass": "Main",
+            "projectName": "WEB_DEVELOPER-1_b6af80b0"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
             "mainClass": "one.digitalinnovation.basecamp.Main",
             "projectName": "WEB_DEVELOPER-1_b6af80b0"
         },
